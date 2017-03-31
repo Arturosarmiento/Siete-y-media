@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>7 y media</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
 			<h1>Siete y media</h1>
 		</div>
 		<div>
-			<button class="btn" id="#btninicio">REINICIAR</button>
+			<button class="btn" id="btninicio">REINICIAR</button>
 		</div>
 	</header>
 	<div class="contenedor">
@@ -22,13 +24,14 @@
 					<button class="btn" id="btnpedir">PEDIR</button><br>
 					<button class="btn" id="btnplantar">PLANTAR</button>
 				</section>
-				<section id="carta">
+				<section id="carta" class="carta">
 				aquí sale la carta
 				</section>
 			</div>
 			<div class="contenedor">
-				<section id="cartasjugador">
+				<section id="cartasjugador" class="carta">
 					aquí van las cartas que ha sacado
+					<img id="mostrar">
 				</section>
 				<section id="cuenta">
 					cuenta de los puntos
@@ -49,6 +52,7 @@
 			</div>
 		</div>
 	</div>
-	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/codigo.js"></script>
 </body>
 </html>
