@@ -1,3 +1,4 @@
+var puntos = 0;
 var baraja = [
  	// palo oros
 {nombre:"oros1.jpg" , valor:1,estado:false},
@@ -47,13 +48,23 @@ var baraja = [
 
 $(document).ready(function(){
 	$('#btnplantar').click(function(){
-		$('#btnpedir').prop('disabled', true)
+		$('#btnpedir').prop('disabled', true);
 	});
 	$('#btninicio').click(function(){
-		$('#btnpedir').prop('disabled', false)
+		location.reload();
 	});
 	$('#btnpedir').click(function(){
-		var numero = Math.floor(Math.random()*40 + 0)
+		var numero = Math.floor(Math.random()*40 + 0);
+		while (baraja[numero].estado == true){
+			numero = Math.floor(Math.random()*40 + 0);
+		}
 		$('#carta').html('<img src=img/' + baraja[numero].nombre + '>');
+		$('#cartasjugador').append('<img src=img/' + baraja[numero].nombre + '>');
+		puntos += baraja[numero].valor;
+		$('#cuentajugador').text('Tus puntos son: ' + puntos.toLocaleString());
+		if (puntos >= 7.5){
+			$('#btnpedir').prop('disabled', true);
+			$('#btnplantar').prop('disabled', true);
+		};
 	});
 })
