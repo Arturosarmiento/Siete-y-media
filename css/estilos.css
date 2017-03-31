@@ -1,24 +1,46 @@
+/* =============================================== 
+	Fecha: 31/03/2017
+	Autor: MAMG 
+	===============================================*/
 header{
 	display: flex;
 	flex-direction: row;
 	background-color: black;
-	color: white;
+	color: #ffc107;
 	justify-content: space-between;
 	align-items: center;
 }
+h1{
+	font-family: 'Spirax', cursive;
+	font-size: 2.8em;
+}
 body{
 	background-color: black;
+	font-family: 'Arimo', sans-serif;
 }
 section{
 	border: 2px dotted red;
 	border-radius: 10px;
 }
+footer{
+	color: grey;
+	text-align: right;
+}
 .btn{
 	width: 100px;
 	height: 2em;
-	border: 1px solid white;
+	border: 3px solid black;
 	border-radius: 5px;
 	margin: 10px;
+	padding:  5px;
+	font-size: 18px;
+	font-family: 'Denk One', sans-serif;
+	font-weight: bold;
+	background-color: #ffc107;
+}
+.btn:hover{
+	opacity: 0.8;
+	border: 3px solid lightgray;
 }
 .contenedor{
 	display: flex;
