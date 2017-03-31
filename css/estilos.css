@@ -58,9 +58,13 @@ footer{
 	border-radius: 10px;
 }
 
-#botonera #cuenta #cuentamaquina{
+#botonera, #cuentajugador, #cuentamaquina{
 	width: 30%;
+	font-size: 18px;
+	font-family: 'Denk One', sans-serif;
+	font-weight: bold;
 }
+
 #carta, #cartasjugador, #cartamaquina, #cartasmaquina{
 	width: 70%;
 	height: 40vh;
