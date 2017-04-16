@@ -107,7 +107,6 @@ function juegaMaquina(){
 	sacaCarta(2);
 	$("#cuentamaquina").html("PUNTOS:<br>" + puntosMaquina);
 
-
 	while (puntosMaquina<7.5){
 		sacaCarta(2);
 		$("#cuentamaquina").html("PUNTOS:<br>" + puntosMaquina);
