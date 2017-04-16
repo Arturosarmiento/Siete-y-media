@@ -19,7 +19,7 @@ body{
 	font-family: 'Arimo', sans-serif;
 }
 section{
-	border: 2px dotted red;
+	/* border: 2px dotted red; */
 	border-radius: 10px;
 }
 footer{
@@ -63,9 +63,56 @@ footer{
 	font-size: 18px;
 	font-family: 'Denk One', sans-serif;
 	font-weight: bold;
+	height: auto;
 }
 
 #carta, #cartasjugador, #cartamaquina, #cartasmaquina{
 	width: 70%;
-	height: 40vh;
+}
+#cartasjugador, #cartasmaquina{
+	height: 50vh;
+}
+
+#carta,#cartamaquina{
+	height: 25vh;
+}
+
+#cuentajugador, #cuentamaquina{
+	color: #ffc107;
+	padding: 2em;
+	text-align: center;
+	font-size: 2em;
+}
+
+#gameover{
+	z-index: 3;
+	display: none;
+	position: absolute;
+	left: 30%;
+	top: 30vh;
+	width: 40%;
+	height: 30vh;
+	border: 10px double black;
+	border-radius: 10px;
+	background-color: #ffc107;
+	opacity:0.8;
+	color: black;
+	padding-top: 32px;
+	font-size: 24px;
+	font-family: 'Denk One', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	cursor:pointer;
+}
+
+#btncerrar{
+	position: absolute;
+	top:0;
+	right: 0;
+	width:auto;
+	height:auto;
+	border: 1px solid black;
+	border-top: 0;
+	border-right: 0;
+	padding: 2px 5px 2px 5px;
 }
